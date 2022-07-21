@@ -78,7 +78,7 @@ type ImageData = {
 describe("Test image upload", () => {
     let token: string;
     beforeAll(async () => {
-        // token = await login();
+        token = await login();
     });
     let sampleImages: Array<ImageData> = [];
     test("Upload multiple images", async () => {
