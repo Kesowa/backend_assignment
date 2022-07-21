@@ -10,6 +10,13 @@ A Node.js REST server where users can upload geospatial data and extract informa
 ## Objective
 Make all the tests pass `npm test`
 
+## Steps
+1. Fork the repository
+2. Create all the necessary endpoints
+3. Pass all the tests
+4. Submit a pull request
+5. Wait for approval
+
 ## Restrictions
 - Do not change modify contents of `__tests__` unless neccessary
 - Use a mongoDB server instance to store all data
@@ -17,7 +24,6 @@ Make all the tests pass `npm test`
 - Use Authorization header for authentication
 
 ## Hints
-
 - Every image has some exif GPS metadata in the following format. Use an exif parser library to extract the longitude and latitude.
 
     ```exif:GPSAltitude: 64022/1000
