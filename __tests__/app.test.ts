@@ -28,7 +28,7 @@ describe("Test authentication", () => {
         const res = await request(app)
             .post("/signup")
             .send(userCreds)
-            .expect(201);
+            .expect(200);
         expect(res.body).toEqual({
             status: true,
             message: "registeration successful"
@@ -118,7 +118,7 @@ describe("Test image upload", () => {
         expect(res.body).toEqual({
             status: true,
             message: "found image",
-            data: sampleImages[0]
+            data: sampleImages[1]
         });
     })
 })
